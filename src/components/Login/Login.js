@@ -43,7 +43,17 @@ const handleGoogleSign = () => {
 
     return (
         <div>
-            <button onClick={handleGoogleSign} >Google Sign In</button>
+            <button style={{
+              margin:'50px 600px',
+              backgroundColor:'blue',
+              color:'white',
+              padding:'5px',
+              width:'200px',
+              height:'40px',
+              fontSize:'18px',
+              borderRadius:'5px',
+              border:'1px solid gray',
+            }} onClick={handleGoogleSign} >Google Sign In</button>
         </div>
     );
 };
