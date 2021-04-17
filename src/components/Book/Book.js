@@ -16,7 +16,6 @@ const Book = () => {
         checkIn: new Date(),
         checkOut: new Date()
     });
-
     const handleCheckIn = (date) => {
         const newDates = {...selectedDate}
         newDates.checkIn = date;
@@ -27,6 +26,9 @@ const Book = () => {
         newDates.checkOut = date;
         setSelectedDate(newDates);
     };
+    const handleBooking = () =>{
+
+    }
 
     return (
         <div style={{ textAlign: 'center' }}>
@@ -62,7 +64,7 @@ const Book = () => {
                 </Grid>
             </MuiPickersUtilsProvider>
 
-            <Button variant="contained" color="primary">
+            <Button onClick={handleBooking} variant="contained" color="primary">
                 Book Now
             </Button>
         </div>
